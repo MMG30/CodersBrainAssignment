@@ -1,0 +1,75 @@
+.MainDiv{
+    width: 15%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0px;
+    height: fit-content
+}
+.filters{
+    /* background-color: coral; */
+    text-align: center;
+}
+.filters > p{
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    width: 80%;
+    border-bottom: 1px solid #555;
+    color: #555;
+}
+.YearFilterDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.YearFilterDiv p:nth-child(even){
+    margin-left: 40px;
+}
+.YearFilterDiv p{
+    color: #000;
+    background-color: #C5E09B;
+    display: inline-block;
+    padding: 4px 20px;
+    margin: 6px 0px;
+    border-radius: 4px;
+    cursor: pointer
+}
+.darkGreen{
+    background-color: #7CBA01 !important;
+}
+.disabled{
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+@media only screen and (max-width: 700px){
+
+    .MainDiv{
+        width: 100%;
+    }
+    .filters > p{
+        margin: 20px auto;
+    }
+    .YearFilterDiv{
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .MainDiv{
+        width: 100%;
+    }
+    .YearFilterDiv{
+        justify-content: flex-start;
+    }
+    .YearFilterDiv p:nth-child(even){
+        margin: 10px 10px;
+    }
+    .YearFilterDiv p:nth-child(odd){
+        margin: 10px 10px;
+    }
+}

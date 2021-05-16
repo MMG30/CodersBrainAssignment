@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F2F2F2;
+    padding: 6px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.MainSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.footer{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 700px){
+    .Title{
+        font-size: 20px;
+    }
+    .MainSection{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .Title{
+        font-size: 20px;
+    }
+    .MainSection{
+        display: block;
+    }
+}
